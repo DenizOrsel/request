@@ -1,6 +1,7 @@
-.App-container {
-    background: #fafafa;
+.Content-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 90vh;
+    margin: 10px;
 }

@@ -1,0 +1,77 @@
+.Navigation-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 0 4px;
+    background-color: #02a79c;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .7);
+}
+
+ul:last-of-type {
+    margin-left: auto;
+}
+
+.Nfield-logo {
+    margin: 2px;
+    width: 46px;
+    filter: invert(.1);
+}
+
+.Navigation-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Navigation-links li {
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 0 10px;
+    opacity: 0.7;
+    font-weight: 500;
+}
+
+.Empty-div {
+    width: 65%;
+}
+
+.Api {
+    opacity: 1 !important;   
+    text-decoration: underline !important;
+    text-underline-offset: 1.48em;
+    text-decoration-thickness: 2px !important;
+    text-decoration-color: red !important; 
+}
+
+.Navigation-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    list-style:none;
+    color: #fff;
+    font-size: 26px;
+    gap: 26px;
+    margin-left: auto;
+}
+
+.Navigation-username li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    color: #fff;
+    padding-right: 10px;
+    padding-bottom: 2px;
+    margin-bottom: -6px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor:pointer;
+}
+
+.Navigation-username li:last-child {
+    font-style: italic;
+}
