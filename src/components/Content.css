@@ -1,7 +1,9 @@
 .Content-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 90vh;
-    margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 90vh;
+  margin: 10px;
+  border: 1px solid red;
+  
 }
