@@ -1,10 +1,44 @@
 .Storage-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   width: 33%;
   margin: 1px;
-  border: 1px solid red;
+  border-right: 1px solid rgba(2, 167, 156, 0.2);
   resize: horizontal;
   overflow: auto;
+}
+
+.Button-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+  margin-left: auto;
+}
+
+.Button-primary {
+  background-color: rgba(2, 167, 156, 1);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.Button-primary:hover {
+  background-color: rgba(2, 167, 156, 0.7);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.Apis-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
 }

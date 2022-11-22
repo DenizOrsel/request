@@ -1,15 +1,20 @@
 import React from "react";
+import { useState } from "react";
 import "./Content.css";
 import Storage from "./Storage";
-import Request from "./Request";
-import Result from './Result'
+import Requestx from "./Requestx";
 
 const Content = () => {
+  const [Request, setRequest] = useState(false);
+
+  const RequestHandler = () => {
+    setRequest(true);
+  };
+
   return (
     <div className="Content-container">
-      <Storage />
-      <Request />
-      <Result />
+      <Storage onRequest={RequestHandler} />
+      {Request ? <Requestx /> :  null}
     </div>
   );
 };

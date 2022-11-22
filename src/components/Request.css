@@ -1,8 +1,0 @@
-.Request-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 33%;
-  margin: 1px;
-  border: 1px solid red;
-}

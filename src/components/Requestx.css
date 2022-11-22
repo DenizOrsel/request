@@ -1,0 +1,16 @@
+.Request-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 62%;
+  margin: 20px;
+}
+
+.Request-sections {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px;
+  flex-grow: 1;
+}
