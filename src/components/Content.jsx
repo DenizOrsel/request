@@ -7,14 +7,14 @@ import Requestx from "./Requestx";
 const Content = () => {
   const [Request, setRequest] = useState(false);
 
-  const RequestHandler = () => {
-    setRequest(true);
+  const RequestHandler = (bool) => {
+    setRequest(bool);
   };
 
   return (
     <div className="Content-container">
       <Storage onRequest={RequestHandler} />
-      {Request ? <Requestx /> :  null}
+      {Request ? <Requestx onRequest={RequestHandler} /> :  null}
     </div>
   );
 };

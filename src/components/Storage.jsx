@@ -8,27 +8,32 @@ const apis = [
   {
     id: 1,
     method: "GET",
-    url: "https://domain.com/api/v1/endpoint/c323ed3c3qc344qv4qfafg4avaadsdva4v4a",
+    name: "Brands",
+    url: "https://domain.com/api/v1/endpoint/",
   },
   {
     id: 2,
     method: "POST",
-    url: "https://domain.com/api/v1/endpoint/c323ed3c3qc344qv4qfafg4avaadsdva4v4a",
+    name: "Answers",
+    url: "https://domain.com/api/v1/endpoint/",
   },
   {
     id: 3,
     method: "PUT",
-    url: "https://domain.com/api/v1/endpoint/c323ed3c3qc344qv4qfafg4avaadsdva4v4a",
+    name: "New Brands",
+    url: "https://domain.com/api/v1/endpoint/",
   },
   {
     id: 4,
     method: "DELETE",
-    url: "https://domain.com/api/v1/endpoint/c323ed3c3qc344qv4qfafg4avaadsdva4v4a",
+    name: "Old Brands",
+    url: "https://domain.com/api/v1/endpoint",
   },
   {
     id: 5,
     method: "PATCH",
-    url: "https://domain.com/api/v1/endpoint/c323ed3c3qc344qv4qfafg4avaadsdva4v4a",
+    name: "Update Answers",
+    url: "https://domain.com/api/v1/endpoint/",
   },
 ];
 
@@ -37,17 +42,20 @@ const ApisList = apis.map((api) => {
     <Apis
       key={api.id}
       method={api.method}
+      name={api.name}
       url={api.url}
       onRequestAPI={props.onRequest}
     />
   );
 });
 
+const RequestHandler = () => {
+  props.onRequest(true);}
 
   return (
     <div className="Storage-container">
       <section className="Button-section">
-        <button className="Button-primary" onClick={props.onRequest}>New Request</button>
+        <button className="Button-primary" onClick={RequestHandler}>New Request</button>
       </section>
       <section className="Apis-section">
       {ApisList}
