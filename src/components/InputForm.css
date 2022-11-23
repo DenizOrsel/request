@@ -1,0 +1,50 @@
+.form-container {
+  display: row;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+ select {
+  padding: 10px 2px;
+  margin: 42px 0;
+  display: inline-block;
+  border: 1px solid #02a79c;
+  border-radius: 4px 0 0 4px;
+  box-sizing: border-box;
+  color: #02a79c;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input[type=button] {
+  background-color: #02a79c;
+  border: none;
+  color: white;
+  padding: 11px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 0 4px 4px 0;
+  font-size: 16px;
+  margin: 0px;
+  cursor: pointer;
+}
+
+input[type=button]:hover {
+  background-color: rgba(2, 167, 156, 0.7);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+input[type=text] {
+width:550px;
+padding: 11px 16px;
+border: 1px solid #02a79c;
+}
+
+input[type=text]:focus, select:focus {
+    outline:#02a79c;
+    background-color: azure;
+}

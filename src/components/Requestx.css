@@ -11,8 +11,10 @@
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  margin-top: 60px;
+  margin-top: 19px;
+  margin-left: -19px;
   flex-grow: 1;
+  width: 90%;
 }
 
 .High-Tabs {
@@ -27,30 +29,30 @@
   padding: 10px;
   font-size: 14px;
   font-weight: 600;
-  letter-spacing: .5pt;
+  letter-spacing: 0.5pt;
   cursor: pointer;
   color: #02a79c;
   border-bottom: 2px solid red;
 }
 
 .High-Tabs:hover {
-  background: rgba(2, 167, 156, .03);
+  background: rgba(2, 167, 156, 0.03);
 }
 
 .icon-api {
-width: 20px;
-height: 20px;
-background: rgb(6, 169, 6);
-color: white;
-border-radius: 50%;
-margin-right: 4px;
+  width: 20px;
+  height: 20px;
+  background: rgb(6, 169, 6);
+  color: white;
+  border-radius: 50%;
+  margin-right: 4px;
 }
 
 .icon-close {
-width: 20px;
-height: 20px;
-color: black;
-margin-left: auto;
+  width: 20px;
+  height: 20px;
+  color: black;
+  margin-left: auto;
 }
 
 .icon-close:hover {

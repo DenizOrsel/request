@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Requestx.css";
 import Result from "./Result";
 import Query from "./Query";
@@ -7,10 +7,15 @@ import { IoClose } from "react-icons/io5";
 
 const Requestx = (props) => {
 
+  const [Resultx, setResultx] = useState(false);
+
+  const ResultxHandler = (bool) => {
+    setResultx(bool);
+  };
+
 const RequestHandler = () => {
   props.onRequest(false);
 };
-
 
 
   return (
@@ -21,8 +26,8 @@ const RequestHandler = () => {
         <IoClose className="icon-close" onClick={RequestHandler} />
       </section>
       <div className="Request-sections">
-        <Query />
-        <Result />
+        <Query onResult={ResultxHandler} />
+        {Resultx ? <Result /> : null}
       </div>
     </div>
   );

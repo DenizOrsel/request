@@ -1,5 +1,6 @@
 import React from "react";
 import "./Apis.css";
+import { HiArrowSmRight } from "react-icons/hi";
 
 const Apis = (props) => {
   return (
@@ -8,7 +9,7 @@ const Apis = (props) => {
         <span className={props.method}>{props.method}</span>
         <span className="name">{props.name}</span>
         <span className="url">{props.url}</span>
-        <span className="menu-ellipsis">⋮</span>
+        <span className="menu-ellipsis"><HiArrowSmRight /></span>
       </section>
     </div>
   );

@@ -1,0 +1,21 @@
+.query-form-container {
+  display: row;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.query-form-container > input[type=text] {
+width:250px;
+padding: 11px 16px;
+border:none;
+margin: 20px;
+border-bottom: 1px solid #02a79c;
+}
+
+.query-form-container > input[type=text]:focus {
+    outline:#02a79c;
+    background-color: azure;
+}
