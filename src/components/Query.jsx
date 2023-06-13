@@ -10,9 +10,11 @@ const Query = (props) => {
         <InputForm onResult={props.onResult} />
       </section>
       <ul className="Request-tab">
+        <li className="Request-tab-item">Name</li>
         <li className="Request-tab-item Request-tab-item-active">Query</li>
         <li className="Request-tab-item">Headers</li>
-        <li className="Request-tab-item">Body (json)</li>
+        <li className="Request-tab-item">Body</li>
+        <li className="Request-tab-item">Test Values</li>
       </ul>
       <h4 className="Request-title">Query Parameters</h4>
       <section className="Request-actions">
