@@ -19,7 +19,7 @@ const ResultHandler = () => {
           <option value="delete">DELETE</option>
         </select>
         <input type="text" placeholder="Enter Url" />
-        <input type="button" value="Send" onClick={ResultHandler} />
+        <input type="button" value="Save & Send" onClick={ResultHandler} />
       </form>
     </>
   );
