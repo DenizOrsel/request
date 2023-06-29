@@ -48,6 +48,14 @@
   margin-right: 4px;
 }
 
+.icon-save {
+  width: 24px;
+  height: 24px;
+  color: rgb(152, 152, 152);
+  margin-left: 38vw;
+  margin-top: -1rem;
+}
+
 .icon-close {
   width: 20px;
   height: 20px;
