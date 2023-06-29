@@ -23,7 +23,7 @@ const RequestHandler = () => {
       <section className="High-Tabs">
         <TbApi className="icon-api" />
         <span>New Request</span>
-        <IoClose className="icon-close" onClick={RequestHandler} />
+        
       </section>
       <div className="Request-sections">
         <Query onResult={ResultxHandler} />
@@ -34,3 +34,6 @@ const RequestHandler = () => {
 };
 
 export default Requestx;
+
+
+//<IoClose className="icon-close" onClick={RequestHandler} />  This is close button for the request tab. We removed it because we want a single request tab to be open at a time.
